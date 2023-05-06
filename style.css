@@ -1,0 +1,128 @@
+*{
+  --color-primary: #69B99D;
+  --color-hover: #6aaa94;
+  --color-selection: #1F1534;
+  --color-span: #89C5CC;
+  --color-text: #7D7987;
+
+  font-family: 'Mulish', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  list-style: none;
+  font-style: none;
+}
+
+
+body .page {
+
+/* regulando 100% de vh ja contando
+ o extra de margin com o padding top*/
+  padding-top: 65px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82%, rgba(227, 255, 248, 0.38) 100%);
+
+}
+
+.logo:hover {
+  transition: all .2s;
+  transform: scale(1.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 55px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+ul {
+  display: flex;
+  gap:48px;
+}
+
+nav ul a  {
+  opacity: 0.5;
+  display: flex;
+  color:var(--color-text)
+}
+
+nav ul li a:hover {
+  opacity: 1;
+  color:var(--color-selection);
+  font-weight: bold;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+
+h1 {
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal;
+  color: var(--color-selection);
+  margin-bottom: 40px;
+}
+
+
+p {
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--color-text);
+  margin-bottom: 30px;
+}
+
+span {
+  color: var(--color-span);
+  font-weight: bold;
+}
+
+.bota button {
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  border-color: 1px var(--color-hover);
+
+  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background: var(--color-primary);
+}
+
+.bota button:hover {
+  background: var(--color-hover);
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+  margin-top: 80px;
+}
+
+footer a {
+  font-weight: bold;
+
+}
+
+#balls{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
